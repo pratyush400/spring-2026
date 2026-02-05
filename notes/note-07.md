@@ -38,34 +38,34 @@ Perform the following subtraction (result in hexadecimal):
 
 Convert to decimal the following binary numbers:
 
-1101
-10100
-01010101
-1100010011
+1101  
+10100  
+01010101  
+1100010011  
 
 Convert to binary the following decimal numbers:
 
-17
-22
-145
-255
+17  
+22  
+145  
+255  
 
 Convert to hexadecimal the following binary numbers:
 
-100010111001
-110100111111
-1101100011
-1110010110111
+100010111001  
+110100111111  
+1101100011  
+1110010110111  
 
 
 Convert to binary the following hexadecimal numbers:
 
-5C9
-9D2
-AFE3
-F54B
+5C9  
+9D2  
+AFE3  
+F54B  
 
 Convert the following hexadecimal numbers to decimal:
 
-87
-14A
+87  
+14A  
