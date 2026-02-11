@@ -1,8 +1,8 @@
 CC=cc
 EXEC=bitfun
+SOURCES=driver.c bitlib.c
 OBJS=driver.o bitlib.o
 OPTS=-std=c99 -Wall
-SOURCES=*.c
 
 all: $(EXEC)
 
