@@ -9,8 +9,8 @@ all: $(EXEC)
 $(EXEC): $(OBJS)
 	$(CC) $(OPTS) $(OBJS) -o $(EXEC)
 
-.c.o:
-	$(CC) $(OPTS) -c *.c
+%.o: %.c
+	$(CC) $(OPTS) -c $<
 
 clean:
 	rm -f *.o $(EXEC) a.out
