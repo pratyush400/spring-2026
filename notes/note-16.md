@@ -21,7 +21,7 @@ Instruction            | Effect           | Name
 `movw` *src*, *dst*    | *dst* `<-` *src* | move word
 `movl` *src*, *dst*    | *dst* `<-` *src* | move doubleword
 `movq` *src*, *dst*    | *dst* `<-` *src* | move quadword
-`movabsq` *imm*, *reg* | *dst* `<-` *src* | move absolute quad word
+`movabsq` *imm*, *reg* | *reg* `<-` *imm* | move absolute quad word
 
 Notes:
 * Operands *src* and *dst* cannot be both memory
@@ -37,8 +37,8 @@ Notes:
 C | Assemly
 -|-
 `i = 42`  | `movl  $42, %ebp`
-`*p = 42` | `movl $42, (%eax)`
+`*p = 42` | `movl $42, (%rax)`
 `i = j`   | `movl %esp, %ebp`
-`*p = i`  | `movl %ebp, (%eax)`
-`j = *p`  | `movl (%eax), %esp`
+`*p = i`  | `movl %ebp, (%rax)`
+`j = *p`  | `movl (%rax), %esp`
 `q = 0xfdecba9876543210` | `movabsq $0xfdecba9876543210, %rbx`
