@@ -42,7 +42,7 @@ long *f1(long a[], long i) {
 ```
 
 Do these examples help understand the purpose of the `lea` instruction? Do
-them help understand how the C compiler implemented addition in the previous
+they help understand how the C compiler implemented addition in the previous
 section?
 
 ### Put it all together
