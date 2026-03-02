@@ -36,7 +36,7 @@ long f1(long a[], long i) {
 and
 
 ```c
-long *f1(long a[], long i) {
+long *f2(long a[], long i) {
     return &a[i];
 }
 ```
