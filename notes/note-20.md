@@ -5,9 +5,9 @@ the *Intel® 64 and IA-32 Architectures Software Developer’s Manual*.
 
 ## Condition code
 
-I mentioned in [Note 14](./note-14.md), processor state includes *condition
-code* flags. These flags are held in a register called RFLAG. The important
-flags are as follows:
+I mentioned, in [Note 14](./note-14.md), that processor state includes
+*condition code* flags. These flags are held in a register called RFLAG. The
+important flags are as follows:
 
 Name        | Description
 -|-
