@@ -1,5 +1,18 @@
 # Note 25
 
+Adapted from *Dive Into Systems*.
+
+## Arrays
+
+Operation        | Type    | Assembly
+-|-|-
+`x = arr`        | `int *` | `mov %rdx, %rax`
+`x = arr[0]`     | `int`   | `mov (%rdx), %eax`
+`x = arr[i]`     | `int`   | `mov (%rdx, %rcx, 4), %eax`
+`x = &arr[3]`    | `int *` | `lea 0xc(%rdx), %rax`
+`x = arr + 3`    | `int *` | `lea 0xc(%rdx), %rax`
+`x = *(arr + 5)` | `int`   | `mov 0x14(%rdx), %eax`
+
 ## Structs
 
 In the 64-bit x86 assembly, the compiler is likely using the *base* plus
