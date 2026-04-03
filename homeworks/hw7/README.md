@@ -27,15 +27,28 @@ of arrays of these `struct`s).
                      1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-|T|T| | | | | | | | | | | | | | | | | | | | | | | | | | |
+|T|T|P|P|R|R|R|R|K|P|V|V|V|V|V|V|V|V|P|P|P|P|P|P| | | | |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
 Reorder the fields in `struct s` to minimize its allocation size. Give the new
 `struct` definition in the space below and indicate the new allocation size.
 
+```c
+struct s {
+    double value;
+    int range;
+    short type;
+    char key;
+};
 ```
-
+```
+                     1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|v|v|v|v|v|v|v|v|r|r|r|r|r|t|t|k|P|P| | | | | | | | | | |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+```
 
 
 
